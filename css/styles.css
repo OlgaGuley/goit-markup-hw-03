@@ -1,0 +1,207 @@
+:root {
+  /* fonts */
+--main-font: 'Roboto', sans-serif;
+--secondary-font: 'Raleway', sans-serif;
+
+  /* text colors */
+--main-txt-cl: #212121;
+--additional-txt-cl: #757575;
+--logo-blue: #2196F3;
+--logo-black: #000000;
+--white-txt: #ffffff;
+--less-white-txt: rgba(255, 255, 255, 0.6);
+
+
+  /* bg colors */
+--dark-bg-cl: #2F303A;
+--light-bg-cl: #F5F5F5;
+--btn-inactive: #F5F4FA;
+
+  /* others */
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+}
+
+
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor
+}
+
+.list {
+  list-style: none;
+}
+
+/* Base Styles */
+.btn {
+  font-family: inherit;
+  color: var(--main-txt-cl);
+  background-color: var(--btn-inactive);
+  font-weight: 700;
+  line-height: calc(30/16);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.btn-filter {
+  font-weight: 500;
+  line-height: calc(26/16);
+  letter-spacing: 0.03em;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--white-txt);
+  background-color: var(--logo-blue);
+}
+
+.btn-active {
+  color: var(--white-txt);
+  background-color: var(--logo-blue);
+}
+
+/* Logo in Header and Footer */
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31/26);
+  letter-spacing: 0.03em;
+}
+
+.logo-blue {
+  color: var(--logo-blue)
+}
+
+.logo-black {
+  color: var(--logo-black)
+}
+
+/* Header Section */
+.header-link,
+.header-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.header-contacts-link {
+  color: var(--additional-txt-cl);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus,
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--logo-blue);
+}
+
+.header-link-current {
+  color: var(--logo-blue);
+}
+
+
+/* Hero Section */
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60/44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt);
+}
+
+.hero-btn {
+  font-weight: 700;
+  line-height: calc(30/16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Qualities Section */
+.qualities {
+  font-size: 14px;
+}
+
+.qualities-header {
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.qualities-descr {
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  color: var(--additional-txt-cl);
+}
+
+/* Activities Section "Чим ми займаємося" */
+.activities-header,
+.team-header {
+  font-size: 36px;
+  line-height: calc(42/36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Team Section */
+.team {
+  line-height: calc(19/16);
+}
+.team-member-name {
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+}
+
+.team-member-descr {
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--additional-txt-cl);
+}
+
+/* Filter Section (Portfolio.html) */
+
+.filter-item-header {
+  font-size: 18px;
+  line-height: calc(36/18);
+  letter-spacing: 0.06em;
+}
+
+.filter-item-descr {
+  line-height: calc 30/16;
+  letter-spacing: 0.03em;
+  color: var(--additional-txt-cl)
+}
+
+/* Footer Section */
+.footer {
+  color: var(--white-txt);
+  background-color: var(--dark-bg-cl);
+}
+
+.footer-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts-link {
+  color: var(--less-white-txt);
+}
+
+
